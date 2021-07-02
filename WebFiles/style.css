@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: Helvetica, Arial, sans-serif;
+  /*
+  this makes it so one rem is 10px
+  */
+}
+
+body {
+  background-color: rgb(202, 202, 202);
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(218, 83, 34);
+}
+
+a:hover {
+  color: coral;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.808);
+  color: white;
+  padding: 0.5rem 0.5rem 1rem 1rem;
+  position: fixed;
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+  font-size: 2rem;
+  display: inline;
+  margin: 2rem;
+}
+
+.nav-link {
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.808);
+  min-width: 1.6rem;
+  box-shadow: 0rem 0.8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+  transform: translateX(-10%);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 1.2rem 1.8rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  color: coral;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.jumbotron {
+  width: 100%;
+  height: auto;
+  background-color: cadetblue;
+  color: white;
+  padding: 10rem 3rem 15rem 3rem;
+}
+
+.jumbotron h1 {
+  font-size: 8rem;
+  background-color: rgba(71, 71, 71, 0.507);
+  padding: 3rem 3rem 5rem 5rem;
+  display: inline-block;
+}
+
+@media screen and (min-width: 480px) {
+  .jumbotron h1 {
+    font-size: 12rem;
+  }
+}
+
+#main-jumbotron {
+  background: url("assets/main_page_assets/city_photo.jpeg");
+  background-position: center;
+  justify-content: center;
+}
+
+#mobile-jumbotron {
+  background: url("assets/mobile_page_assets/phone_dark.jpg");
+  background-position: center;
+}
+
+#java-jumbotron {
+  background: url("assets/java_proj_assets/dark_mac.jpg");
+  background-position: center;
+}
+
+#unity-jumbotron {
+  background: url("assets/unity_projects_assets/nintendo_image.jpg");
+  background-position: center;
+}
+
+.content {
+  padding: 3rem;
+}
+
+.content h1 {
+  font-size: 3rem;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+}
+
+.content h3 {
+  font-size: 2rem;
+}
+
+.content p,
+.content a {
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: rgb(163, 163, 163);
+  padding: 3rem;
+  height: 10%;
+  width: 100%;
+  font-size: 1.5rem;
+  bottom: 0;
+}
+
+main {
+  height: auto;
+}
+
+#main-content,
+.app {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.left,
+.right {
+  display: inline-flex;
+  margin: 3%;
+}
+
+.left {
+  padding: 1rem 1rem 3rem 1rem;
+  max-width: 70rem;
+  height: auto;
+  margin-right: 5%;
+}
+
+.left > div {
+  display: block;
+}
+
+.right {
+  padding: 1rem;
+  margin-left: 5%;
+}
+
+#profile {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+#profile-pic {
+  display: inline-flex;
+  border-radius: 50%;
+  background-image: url("assets/main_page_assets/profile_pic_casual.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  width: 20rem;
+  height: 20rem;
+}
+
+#links {
+  display: inline-flex;
+  vertical-align: top;
+  margin-left: 1.5rem;
+}
+
+#links > div {
+  display: block;
+}
+
+.app,
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: left;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.project {
+  justify-content: space-around;
+}
+
+.icon-holder {
+  display: inline-flex;
+  padding: 3rem;
+}
+
+.icon {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 1rem;
+}
+
+.project-left {
+  max-width: 90rem;
+}
+
+.project-icon a {
+  vertical-align: center;
+}
+
+.project-icon a img {
+  vertical-align: middle;
+  margin-top: 8rem;
+}
+
+#transparent-icon {
+  background-color: white;
+}
+
+.project-info {
+  display: inline-flex;
+  max-width: 50rem;
+  padding: 10rem 2rem;
+}
+
+.project-text {
+  display: block;
+}
+
+.project-video-holder video {
+  height: 30rem;
+  width: 53rem;
+  background-color: black;
+  right: 0;
+  margin: 3rem 0rem;
+}
+
+@media screen and (max-width: 480px) {
+  .project-video-holder video {
+    width: 30rem;
+    height: 17rem;
+  }
+}
+
+.project-text ul {
+  padding-left: 2rem;
+}
+
+.text-list {
+  font-size: 1.5rem;
+}
