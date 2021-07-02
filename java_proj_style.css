@@ -1,0 +1,11 @@
+a {
+  color: darkslateblue;
+}
+
+a:hover {
+  color: rgb(160, 0, 160);
+}
+
+.dropdown-content a:hover {
+  color: rgb(160, 0, 160);
+}
