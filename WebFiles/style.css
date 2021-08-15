@@ -269,6 +269,10 @@ main {
   margin: 3rem 0rem;
 }
 
+.project-video-holder {
+  padding-top: 5rem;
+}
+
 @media screen and (max-width: 480px) {
   .project-video-holder video {
     width: 30rem;
