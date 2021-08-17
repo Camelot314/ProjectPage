@@ -90,12 +90,6 @@ nav li {
   display: inline-block;
 }
 
-@media screen and (min-width: 480px) {
-  .jumbotron h1 {
-    font-size: 12rem;
-  }
-}
-
 #main-jumbotron {
   background: url("assets/main_page_assets/city_photo.jpeg");
   background-position: center;
@@ -238,17 +232,13 @@ main {
   max-width: 90rem;
 }
 
-.project-icon a {
-  vertical-align: center;
-}
-
 .project-icon a img {
   vertical-align: middle;
   margin-top: 8rem;
 }
 
-#transparent-icon {
-  background-color: white;
+.transparent-icon {
+  background-color: rgb(128, 128, 128);
 }
 
 .project-info {
@@ -286,4 +276,52 @@ main {
 
 .text-list {
   font-size: 1.5rem;
+}
+
+.button-holder {
+  padding-top: 1rem;
+  justify-content: space-around;
+}
+
+.custom-button {
+  border: none;
+  color: white;
+  padding: 1rem 2.4rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 1.6rem;
+  margin: 0.4rem 0.2rem;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: rgb(128, 128, 128);
+}
+
+.unity-button:hover {
+  background-color: #3982d6;
+  color: white;
+}
+
+.java-button:hover {
+  background-color: rgb(160, 0, 160);
+}
+
+.mobile-button:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.hide-on-mobile {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .jumbotron h1 {
+    font-size: 12rem;
+  }
+
+  .hide-on-mobile {
+    display: inline-flex;
+  }
 }
